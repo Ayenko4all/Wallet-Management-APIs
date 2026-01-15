@@ -23,7 +23,7 @@ class WalletService
         if ($existingWallet) {
             throw new WalletException(
                 'User already has a wallet',
-                442
+                422
             );
         }
 
@@ -41,7 +41,7 @@ class WalletService
         if ($data['amount'] <= 0) {
             throw new WalletException(
                 'Amount must be greater than 0',
-                442
+                422
             );
         }
 
@@ -76,7 +76,7 @@ class WalletService
         if ($data['amount'] <= 0) {
             throw new WalletException(
                 'Amount must be greater than 0',
-                442
+                422
             );
         }
 
@@ -142,7 +142,7 @@ class WalletService
         if ($wallet->balance > 0) {
             throw new WalletException(
                 'Cannot delete wallet with non-zero balance',
-                442
+                422
             );
         }
 

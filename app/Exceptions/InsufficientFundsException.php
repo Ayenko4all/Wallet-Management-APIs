@@ -7,9 +7,9 @@ use Throwable;
 
 class InsufficientFundsException extends Exception
 {
-    protected $code = 442;
+    protected $code = 422;
 
-    public function __construct(string $message = "Transaction error", int $code = 442, ?Throwable $previous = null)
+    public function __construct(string $message = "Transaction error", int $code = 422, ?Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
